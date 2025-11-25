@@ -488,3 +488,129 @@ table tbody tr:hover {
     margin-top: 15px;
   }
 }
+
+/* Patient Dashboard Styles */
+.patient-dashboard .sidebar {
+  background: linear-gradient(180deg, #1E40AF 0%, #1E3A8A 100%);
+}
+
+.patient-dashboard .sidebar-menu .emergency-link {
+  background: rgba(239, 68, 68, 0.2);
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.patient-dashboard .sidebar-menu .emergency-link:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-btn {
+  background: var(--light-gray);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.notification-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.notification-btn .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ef4444;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 350px;
+  max-height: 500px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.notification-dropdown h3 {
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid var(--light-gray);
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.notification-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--light-gray);
+  transition: background 0.2s ease;
+}
+
+.notification-item:hover {
+  background: var(--light-gray);
+}
+
+.notification-item.read {
+  opacity: 0.6;
+}
+
+.notif-icon {
+  font-size: 1.5rem;
+}
+
+.notif-content {
+  flex: 1;
+}
+
+.notif-content h4 {
+  color: var(--dark);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.notif-content p {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.notif-time {
+  color: var(--gray);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .notification-dropdown {
+    width: 300px;
+    right: -50px;
+  }
+}

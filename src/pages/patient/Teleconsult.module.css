@@ -1,0 +1,183 @@
+.teleconsultPage {
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.teleconsultPage h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+.videoSection {
+  margin-bottom: 3rem;
+}
+
+.videoPlaceholder {
+  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+  padding: 4rem;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.videoIcon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.videoPlaceholder h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.videoPlaceholder p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.startBtn {
+  background: white;
+  color: var(--primary);
+  border: none;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.startBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.availableDoctors {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.availableDoctors h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.doctorsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.doctorCard {
+  background: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.doctorAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.doctorInfo {
+  flex: 1;
+}
+
+.doctorInfo h4 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.available {
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.callBtn {
+  background: var(--gradient);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.callBtn:hover {
+  transform: translateY(-2px);
+}
+
+.features {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.features h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.featureIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.featureCard h4 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.featureCard p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .teleconsultPage {
+    padding: 1rem;
+  }
+
+  .videoPlaceholder {
+    padding: 3rem 1.5rem;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

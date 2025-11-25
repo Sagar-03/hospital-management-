@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -25,18 +26,18 @@ const Hero = () => {
             </p>
             
             <div className={styles.ctaButtons}>
-              <button className={styles.primaryBtn}>
-                <span>Book Appointment</span>
+              <Link to="/patient-dashboard" className={styles.primaryBtn}>
+                <span>Patient Portal</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </button>
-              <button className={styles.secondaryBtn}>
+              </Link>
+              <Link to="/dashboard" className={styles.secondaryBtn}>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2ZM13 11H11V13C11 13.55 10.55 14 10 14C9.45 14 9 13.55 9 13V11H7C6.45 11 6 10.55 6 10C6 9.45 6.45 9 7 9H9V7C9 6.45 9.45 6 10 6C10.55 6 11 6.45 11 7V9H13C13.55 9 14 9.45 14 10C14 10.55 13.55 11 13 11Z"/>
                 </svg>
-                <span>View Records</span>
-              </button>
+                <span>Doctor Portal</span>
+              </Link>
             </div>
             
             <div className={styles.stats}>

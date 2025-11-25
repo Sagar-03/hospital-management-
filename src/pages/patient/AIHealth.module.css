@@ -1,0 +1,455 @@
+.aiHealthPage {
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--gray);
+}
+
+.uploadSection {
+  margin-bottom: 2rem;
+}
+
+.uploadCard {
+  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #0EA5E9 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.uploadIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.uploadCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.uploadCard p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.uploadBtn {
+  display: inline-block;
+  background: white;
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.uploadBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.uploadedFile {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.analyzing {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 4px solid var(--light-gray);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.analyzing h3 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.analyzing p {
+  color: var(--gray);
+}
+
+.reportTabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.reportTabs button {
+  flex: 1;
+  padding: 1rem;
+  background: white;
+  border: 2px solid var(--light-gray);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reportTabs button.active {
+  background: var(--gradient);
+  color: white;
+  border-color: var(--primary);
+}
+
+.analysisResults {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.reportInfo {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.reportInfo h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.reportInfo p {
+  color: var(--gray);
+}
+
+.parametersTable {
+  margin-bottom: 2rem;
+}
+
+.parametersTable h4 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.parametersTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.parametersTable th {
+  background: var(--light-gray);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.parametersTable td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.statusBadge.normal {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.statusBadge.high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.statusBadge.borderline {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.findingsTable {
+  margin-bottom: 2rem;
+}
+
+.findingsTable h4 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.findingsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.findingCard {
+  padding: 1.5rem;
+  background: var(--light-gray);
+  border-radius: 12px;
+}
+
+.findingCard h5 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.findingCard p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.aiDiagnosis {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid #bae6fd;
+}
+
+.diagnosisHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.diagnosisHeader h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+}
+
+.severityBadge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.severityBadge.none {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.severityBadge.moderate {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.severityBadge.high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.condition {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.condition h4 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.condition p {
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.section h4 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.section li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.followUp {
+  background: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+}
+
+.followUp h4 {
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+
+.followUp p {
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.dietSection {
+  margin-bottom: 2rem;
+}
+
+.dietSection h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dietCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.dietHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.dietHeader h4 {
+  color: var(--dark);
+  font-size: 1.2rem;
+}
+
+.calories {
+  background: var(--gradient);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.dietGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.dietCategory {
+  background: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.dietCategory h5 {
+  color: var(--dark);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.dietCategory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dietCategory li {
+  padding: 0.5rem 0;
+  color: var(--dark);
+  line-height: 1.5;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.dietCategory li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.disclaimer {
+  background: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+}
+
+.disclaimer p {
+  color: var(--dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .aiHealthPage {
+    padding: 1rem;
+  }
+
+  .uploadCard {
+    padding: 2rem 1rem;
+  }
+
+  .reportTabs {
+    flex-direction: column;
+  }
+
+  .parametersTable {
+    overflow-x: auto;
+  }
+
+  .dietGrid {
+    grid-template-columns: 1fr;
+  }
+}
